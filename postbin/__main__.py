@@ -6,8 +6,7 @@ from postbin import postSync
 if len(argv) >= 2:
     text = ' '.join(argv[1:])
 else:
-    text = input(
-        "What text would you like to put on hastebin?\nIf you provide a filepath, it will post that file's content\n\n> ")
+    text = input("What text would you like to put on hastebin?\nIf you provide a filepath, it will post that file content\n\n")
 if path.exists(text):
     try:
         with open(text) as rfile:
